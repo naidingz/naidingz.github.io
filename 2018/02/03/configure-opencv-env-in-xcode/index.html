@@ -103,20 +103,29 @@
   <meta name="keywords" content="Hexo, NexT" />
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Naiding&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="安装OpenCV在官网下载已经编译好了的OpenCV库，或者直接用brew install opencv3安装。前者好处在于可以随便把包放在哪里，后者方便在于可以一键安装所有依赖的库。  第一步，在工程中添加相关的库，如下图所示： 在Build Setting的Header Search Paths里面添加OpenCV目录下的include文件夹，如下图所示： 在Build Setting的Lib">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Xcode 配置 Opencv 环境">
+<meta property="og:url" content="http://yoursite.com/2018/02/03/configure-opencv-env-in-xcode/index.html">
 <meta property="og:site_name" content="Naiding&#39;s Blog">
+<meta property="og:description" content="安装OpenCV在官网下载已经编译好了的OpenCV库，或者直接用brew install opencv3安装。前者好处在于可以随便把包放在哪里，后者方便在于可以一键安装所有依赖的库。  第一步，在工程中添加相关的库，如下图所示： 在Build Setting的Header Search Paths里面添加OpenCV目录下的include文件夹，如下图所示： 在Build Setting的Lib">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/2018/02/03/configure-opencv-env-in-xcode/1.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/03/configure-opencv-env-in-xcode/2.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/03/configure-opencv-env-in-xcode/3.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/03/configure-opencv-env-in-xcode/4.png">
+<meta property="og:updated_time" content="2018-02-03T05:04:47.110Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Naiding&#39;s Blog">
+<meta name="twitter:title" content="Xcode 配置 Opencv 环境">
+<meta name="twitter:description" content="安装OpenCV在官网下载已经编译好了的OpenCV库，或者直接用brew install opencv3安装。前者好处在于可以随便把包放在哪里，后者方便在于可以一键安装所有依赖的库。  第一步，在工程中添加相关的库，如下图所示： 在Build Setting的Header Search Paths里面添加OpenCV目录下的include文件夹，如下图所示： 在Build Setting的Lib">
+<meta name="twitter:image" content="http://yoursite.com/2018/02/03/configure-opencv-env-in-xcode/1.png">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/02/03/configure-opencv-env-in-xcode/"/>
 
 
 
@@ -125,7 +134,7 @@
     sidebar: "",
   };
 </script>
-  <title>Naiding's Blog</title>
+  <title>Xcode 配置 Opencv 环境 | Naiding's Blog</title>
   
 
 
@@ -172,8 +181,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -250,9 +258,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -284,9 +292,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/03/configure-opencv-env-in-xcode/" itemprop="url">Xcode 配置 Opencv 环境</a></h1>
+          <h1 class="post-title" itemprop="name headline">Xcode 配置 Opencv 环境</h1>
         
 
         <div class="post-meta">
@@ -335,9 +341,7 @@
       
 
       
-        
-          
-            <h3 id="安装OpenCV"><a href="#安装OpenCV" class="headerlink" title="安装OpenCV"></a>安装OpenCV</h3><p>在官网下载已经编译好了的OpenCV库，或者直接用<code>brew install opencv3</code>安装。前者好处在于可以随便把包放在哪里，后者方便在于可以一键安装所有依赖的库。</p>
+        <h3 id="安装OpenCV"><a href="#安装OpenCV" class="headerlink" title="安装OpenCV"></a>安装OpenCV</h3><p>在官网下载已经编译好了的OpenCV库，或者直接用<code>brew install opencv3</code>安装。前者好处在于可以随便把包放在哪里，后者方便在于可以一键安装所有依赖的库。</p>
 <ol>
 <li>第一步，在工程中添加相关的库，如下图所示：<br><img src="1.png" alt=""></li>
 <li>在Build Setting的Header Search Paths里面添加OpenCV目录下的include文件夹，如下图所示：<br><img src="2.png" alt=""></li>
@@ -348,8 +352,6 @@
 <p>编译运行结果：</p>
 <p><img src="4.png" alt=""></p>
 
-          
-        
       
     </div>
     
@@ -366,141 +368,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/02/install-python-opencv-for-mac/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Naiding Z">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Naiding's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/02/install-python-opencv-for-mac/" itemprop="url">Mac OpenCV Python 安装</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-02T23:59:59-05:00">2018-02-02</time>
+              <a href="/2018/02/02/install-python-opencv-for-mac/" rel="next" title="Mac OpenCV Python 安装">
+                <i class="fa fa-chevron-left"></i> Mac OpenCV Python 安装
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h3 id="OpenCV2-amp-Python2-7"><a href="#OpenCV2-amp-Python2-7" class="headerlink" title="OpenCV2 &amp; Python2.7"></a>OpenCV2 &amp; Python2.7</h3><p>首先使用<code>brew install opencv</code>安装opencv。</p>
-<p>然后在python2.7的包路径下，执行下面三条命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /usr/<span class="built_in">local</span>/lib/python2.7/site-packages </span><br><span class="line">$ cat ~/.bash_profile | grep PYTHONPATH </span><br><span class="line"></span><br><span class="line">$ ln -s /usr/<span class="built_in">local</span>/Cellar/opencv/2.4.13.2/lib/python2.7/site-packages/cv.py cv.py</span><br><span class="line"></span><br><span class="line">$ ln -s /usr/<span class="built_in">local</span>/Cellar/opencv/2.4.13.2/lib/python2.7/site-packages/cv2.so cv2.so</span><br><span class="line"></span><br><span class="line"><span class="built_in">source</span> ～/.bash_profile <span class="comment"># 让这个配置文件在修改后立即生效。</span></span><br></pre></td></tr></table></figure>
-<p><strong>一定要顺序执行。</strong></p>
-<h3 id="OpenCV3-amp-Python3"><a href="#OpenCV3-amp-Python3" class="headerlink" title="OpenCV3 &amp; Python3"></a>OpenCV3 &amp; Python3</h3><p>首先使用<code>brew install opencv3 --with-python3</code>安装。</p>
-<p>装好之后，在<code>/usr/local/opt/opencv3/lib/python3.6/site-packages</code>文件夹里会有<code>cv2.cpython-36m-darwin.so</code>这个文件。</p>
-<p>首先重命名：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv cv2.cpython-36m-darwin.so cv2.so</span><br></pre></td></tr></table></figure></p>
-<p>接着连接到python3的包中：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s cv2.so /usr/local/lib/python3.6/site-packages/cv2.so</span><br></pre></td></tr></table></figure></p>
-<p>测试：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">➜  site-packages $ python3</span><br><span class="line">Python <span class="number">3.6</span><span class="number">.0</span> (default, Mar  <span class="number">4</span> <span class="number">2017</span>, <span class="number">12</span>:<span class="number">32</span>:<span class="number">34</span>) </span><br><span class="line">[GCC <span class="number">4.2</span><span class="number">.1</span> Compatible Apple LLVM <span class="number">8.0</span><span class="number">.0</span> (clang<span class="number">-800.0</span><span class="number">.42</span><span class="number">.1</span>)] on darwin</span><br><span class="line">Type <span class="string">"help"</span>, <span class="string">"copyright"</span>, <span class="string">"credits"</span> <span class="keyword">or</span> <span class="string">"license"</span> <span class="keyword">for</span> more information.</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> cv2</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(cv2.__version__)</span><br><span class="line"><span class="number">3.2</span><span class="number">.0</span></span><br></pre></td></tr></table></figure></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -510,158 +399,19 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/02/run-matlab-in-terminal/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Naiding Z">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Naiding's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/02/run-matlab-in-terminal/" itemprop="url">Mac 终端运行Matlab</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-02T23:12:39-05:00">2018-02-02</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Matlab/" itemprop="url" rel="index"><span itemprop="name">Matlab</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <ol>
-<li>在终端下运行matlab，开个终端，vim ~/.profile 添加两行</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export PATH=$PATH:/Applications/MATLAB_R2015b.app/bin/</span><br><span class="line">alias matlab=&apos;matlab -nodesktop&apos;</span><br></pre></td></tr></table></figure>
-<p>如果不加后面一行，就会还是打开matlab桌面版。</p>
-<p>之后在终端输入<code>source ~/.profile</code>就好了，以后要用matlab终端输入matlab回车就好了，之后想要运行.m文件，直接输入文件名回车就可以。</p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -682,8 +432,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -741,6 +500,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装OpenCV"><span class="nav-number">1.</span> <span class="nav-text">安装OpenCV</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试配置是否成功"><span class="nav-number">2.</span> <span class="nav-text">测试配置是否成功</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -874,6 +649,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.3"></script>
+
+
 
   
 

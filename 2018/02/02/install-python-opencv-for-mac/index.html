@@ -103,24 +103,24 @@
   <meta name="keywords" content="Hexo, NexT" />
 
 
-<meta name="description" content="在终端下运行matlab，开个终端，vim ~/.profile 添加两行  12export PATH=$PATH:/Applications/MATLAB_R2015b.app/bin/alias matlab=&amp;apos;matlab -nodesktop&amp;apos; 如果不加后面一行，就会还是打开matlab桌面版。 之后在终端输入source ~/.profile就好了，以后要用mat">
+<meta name="description" content="OpenCV2 &amp;amp; Python2.7首先使用brew install opencv安装opencv。 然后在python2.7的包路径下，执行下面三条命令： 12345678$ cd /usr/local/lib/python2.7/site-packages $ cat ~/.bash_profile | grep PYTHONPATH $ ln -s /usr/local/Cella">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Mac 终端运行Matlab">
-<meta property="og:url" content="http://yoursite.com/2018/02/02/run-matlab-in-terminal/index.html">
+<meta property="og:title" content="Mac OpenCV Python 安装">
+<meta property="og:url" content="http://yoursite.com/2018/02/02/install-python-opencv-for-mac/index.html">
 <meta property="og:site_name" content="Naiding&#39;s Blog">
-<meta property="og:description" content="在终端下运行matlab，开个终端，vim ~/.profile 添加两行  12export PATH=$PATH:/Applications/MATLAB_R2015b.app/bin/alias matlab=&amp;apos;matlab -nodesktop&amp;apos; 如果不加后面一行，就会还是打开matlab桌面版。 之后在终端输入source ~/.profile就好了，以后要用mat">
+<meta property="og:description" content="OpenCV2 &amp;amp; Python2.7首先使用brew install opencv安装opencv。 然后在python2.7的包路径下，执行下面三条命令： 12345678$ cd /usr/local/lib/python2.7/site-packages $ cat ~/.bash_profile | grep PYTHONPATH $ ln -s /usr/local/Cella">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-02-03T04:19:21.561Z">
+<meta property="og:updated_time" content="2018-02-03T05:01:50.818Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Mac 终端运行Matlab">
-<meta name="twitter:description" content="在终端下运行matlab，开个终端，vim ~/.profile 添加两行  12export PATH=$PATH:/Applications/MATLAB_R2015b.app/bin/alias matlab=&amp;apos;matlab -nodesktop&amp;apos; 如果不加后面一行，就会还是打开matlab桌面版。 之后在终端输入source ~/.profile就好了，以后要用mat">
+<meta name="twitter:title" content="Mac OpenCV Python 安装">
+<meta name="twitter:description" content="OpenCV2 &amp;amp; Python2.7首先使用brew install opencv安装opencv。 然后在python2.7的包路径下，执行下面三条命令： 12345678$ cd /usr/local/lib/python2.7/site-packages $ cat ~/.bash_profile | grep PYTHONPATH $ ln -s /usr/local/Cella">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/02/02/run-matlab-in-terminal/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/02/02/install-python-opencv-for-mac/"/>
 
 
 
@@ -129,7 +129,7 @@
     sidebar: "",
   };
 </script>
-  <title>Mac 终端运行Matlab | Naiding's Blog</title>
+  <title>Mac OpenCV Python 安装 | Naiding's Blog</title>
   
 
 
@@ -270,7 +270,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/02/run-matlab-in-terminal/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/02/install-python-opencv-for-mac/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Naiding Z">
@@ -287,7 +287,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Mac 终端运行Matlab</h1>
+          <h1 class="post-title" itemprop="name headline">Mac OpenCV Python 安装</h1>
         
 
         <div class="post-meta">
@@ -299,7 +299,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-02T23:12:39-05:00">2018-02-02</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-02T23:59:59-05:00">2018-02-02</time>
             
 
             
@@ -308,24 +308,6 @@
             
           </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Matlab/" itemprop="url" rel="index"><span itemprop="name">Matlab</span></a></span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -354,12 +336,15 @@
       
 
       
-        <ol>
-<li>在终端下运行matlab，开个终端，vim ~/.profile 添加两行</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export PATH=$PATH:/Applications/MATLAB_R2015b.app/bin/</span><br><span class="line">alias matlab=&apos;matlab -nodesktop&apos;</span><br></pre></td></tr></table></figure>
-<p>如果不加后面一行，就会还是打开matlab桌面版。</p>
-<p>之后在终端输入<code>source ~/.profile</code>就好了，以后要用matlab终端输入matlab回车就好了，之后想要运行.m文件，直接输入文件名回车就可以。</p>
+        <h3 id="OpenCV2-amp-Python2-7"><a href="#OpenCV2-amp-Python2-7" class="headerlink" title="OpenCV2 &amp; Python2.7"></a>OpenCV2 &amp; Python2.7</h3><p>首先使用<code>brew install opencv</code>安装opencv。</p>
+<p>然后在python2.7的包路径下，执行下面三条命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /usr/<span class="built_in">local</span>/lib/python2.7/site-packages </span><br><span class="line">$ cat ~/.bash_profile | grep PYTHONPATH </span><br><span class="line"></span><br><span class="line">$ ln -s /usr/<span class="built_in">local</span>/Cellar/opencv/2.4.13.2/lib/python2.7/site-packages/cv.py cv.py</span><br><span class="line"></span><br><span class="line">$ ln -s /usr/<span class="built_in">local</span>/Cellar/opencv/2.4.13.2/lib/python2.7/site-packages/cv2.so cv2.so</span><br><span class="line"></span><br><span class="line"><span class="built_in">source</span> ～/.bash_profile <span class="comment"># 让这个配置文件在修改后立即生效。</span></span><br></pre></td></tr></table></figure>
+<p><strong>一定要顺序执行。</strong></p>
+<h3 id="OpenCV3-amp-Python3"><a href="#OpenCV3-amp-Python3" class="headerlink" title="OpenCV3 &amp; Python3"></a>OpenCV3 &amp; Python3</h3><p>首先使用<code>brew install opencv3 --with-python3</code>安装。</p>
+<p>装好之后，在<code>/usr/local/opt/opencv3/lib/python3.6/site-packages</code>文件夹里会有<code>cv2.cpython-36m-darwin.so</code>这个文件。</p>
+<p>首先重命名：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv cv2.cpython-36m-darwin.so cv2.so</span><br></pre></td></tr></table></figure></p>
+<p>接着连接到python3的包中：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s cv2.so /usr/local/lib/python3.6/site-packages/cv2.so</span><br></pre></td></tr></table></figure></p>
+<p>测试：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">➜  site-packages $ python3</span><br><span class="line">Python <span class="number">3.6</span><span class="number">.0</span> (default, Mar  <span class="number">4</span> <span class="number">2017</span>, <span class="number">12</span>:<span class="number">32</span>:<span class="number">34</span>) </span><br><span class="line">[GCC <span class="number">4.2</span><span class="number">.1</span> Compatible Apple LLVM <span class="number">8.0</span><span class="number">.0</span> (clang<span class="number">-800.0</span><span class="number">.42</span><span class="number">.1</span>)] on darwin</span><br><span class="line">Type <span class="string">"help"</span>, <span class="string">"copyright"</span>, <span class="string">"credits"</span> <span class="keyword">or</span> <span class="string">"license"</span> <span class="keyword">for</span> more information.</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> cv2</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(cv2.__version__)</span><br><span class="line"><span class="number">3.2</span><span class="number">.0</span></span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -384,14 +369,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/02/02/run-matlab-in-terminal/" rel="next" title="Mac 终端运行Matlab">
+                <i class="fa fa-chevron-left"></i> Mac 终端运行Matlab
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/02/02/install-python-opencv-for-mac/" rel="prev" title="Mac OpenCV Python 安装">
-                Mac OpenCV Python 安装 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/02/03/configure-opencv-env-in-xcode/" rel="prev" title="Xcode 配置 Opencv 环境">
+                Xcode 配置 Opencv 环境 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -441,8 +430,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -500,6 +498,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#OpenCV2-amp-Python2-7"><span class="nav-number">1.</span> <span class="nav-text">OpenCV2 &amp; Python2.7</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#OpenCV3-amp-Python3"><span class="nav-number">2.</span> <span class="nav-text">OpenCV3 &amp; Python3</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
